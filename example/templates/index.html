@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+		<link rel="stylesheet" href="{% static 'estilos.css' %}" />
+        <title>Rustize components</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/98de68f252.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a class="logo-nav" href="">RUSTEZE.</a>
+            <nav class="nav">
+                <ul id="menuList">
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Sobre nostros</a></li>
+                    <li><a href="">Contactenos</a></li>
+                    <li><a href="">Iniciar sesion/registrarse</a></li>
+                </ul>
+            </nav>
+            <img src="{% static 'img/menu.png' %}" class="menu-nav" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Productos<br>AUTOMOVILISTICOS</h2>
+                <h3>Respuestos, pinturas y componentes para tu automovil.</h3>
+                <p>(Mistubishi, Honda, Nissan)</p>
+                <button class="boton-index" type="button"><b>Ver productos </b> <img class="img-boton" src="./img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="{% static 'img/rueda.png' %}" class="main-index">
+                <div class="color-box"></div>
+                <div class="add-boton">
+                    <img src="{% static './img/add.png' %}">
+                    <p><small><b>Añadir al carro</b> </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Cards de productos -->
+
+<main>
+    <div class="container2">
+        <div class="card card-yellow">
+        <img class="logo-card" src="{% static './img/Rusteze-logo.png' %}" />
+        <h2 class="title">The <br> Best <br> way </h2>
+        <img class="producto" src="{% static './img/image_1.png' %}">
+        <div class="price">
+            <h6>CLP$ 520,000</h4>
+            <h4>CLP$ 479,000</h3>
+        </div>
+        <div class="button-right">
+            <button><b> Comprar </b></button>
+        </div>
+        </div>
+
+        <div class="card card-blue">
+            <img class="logo-card" src="{% static './img/Rusteze-logo.png' %}" />
+            <h2 class="title">The <br> best <br> way</h2>
+            <img class="producto" src="{% static './img/image_2.png' %}">
+            <div class="price">
+            <h6>CLP$ 520,000</h4>
+            <h4>CLP$ 479,000</h3>
+            </div>
+            <div class="button-right">
+            <button><b> Comprar </b></button>
+            </div>
+        </div>
+
+        <div class="card card-red">
+            <img class="logo-card" src="{% static './img/Rusteze-logo.png' %}" />
+            <h2 class="title">The <br> best <br> way</h2>
+            <img class="producto" src="{% static './img/image_3.png' %}">
+            <div class="price">
+            <h6>CLP$ 520,000</h4>
+            <h4>CLP$ 479,000</h3>
+            </div>
+            <div class="button-right">
+            <button><b> Comprar </b></button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Espacio entre container2 y footer -->
+<div class="espacio">
+    <p>dasasd
+
+    </p>
+</div>
+
+
+<!-- Footer -->
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="{% static 'img/Rusteze-logo.png' %}" alt="Logo de Rusteze">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quibusdam!</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, corporis.</P>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Rusteze</b> - Todos los derechos reservados </small>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight =  "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+
+
