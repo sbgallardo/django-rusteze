@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-		<link rel="stylesheet" href="{% static 'estilos.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <title>Rustize components</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
                     <li><a href="">Iniciar sesion/registrarse</a></li>
                 </ul>
             </nav>
-            <img src="{% static 'img/menu.png' %}" class="menu-nav" onclick="togglemenu()">
+            <img src="{% static 'img/menu.png' %}" class="menu-nav" onclick="togglemenu()" alt="">
         </div>
 
         <div class="row">
@@ -34,13 +34,13 @@
                 <h2>Productos<br>AUTOMOVILISTICOS</h2>
                 <h3>Respuestos, pinturas y componentes para tu automovil.</h3>
                 <p>(Mistubishi, Honda, Nissan)</p>
-                <button class="boton-index" type="button"><b>Ver productos </b> <img class="img-boton" src="./img/arrow.png"></button>
+                <button class="boton-index" type="button"><b>Ver productos </b> <img class="img-boton" src="/img/arrow.png" alt=""></button>
             </div>
             <div class="col-2">
-                <img src="{% static 'img/rueda.png' %}" class="main-index">
+                <img src="{% static 'img/rueda.png' %}" class="main-index" alt="">
                 <div class="color-box"></div>
                 <div class="add-boton">
-                    <img src="{% static './img/add.png' %}">
+                    <img src="{% static '/img/add.png' %}" alt="">
                     <p><small><b>Añadir al carro</b> </small></p>
                 </div>
             </div>
@@ -52,9 +52,9 @@
 <main>
     <div class="container2">
         <div class="card card-yellow">
-        <img class="logo-card" src="{% static './img/Rusteze-logo.png' %}" />
+        <img class="logo-card" src="{% static '/img/Rusteze-logo.png' %}" />
         <h2 class="title">The <br> Best <br> way </h2>
-        <img class="producto" src="{% static './img/image_1.png' %}">
+        <img class="producto" src="{% static '/img/image_1.png' %}">
         <div class="price">
             <h6>CLP$ 520,000</h4>
             <h4>CLP$ 479,000</h3>
@@ -65,9 +65,9 @@
         </div>
 
         <div class="card card-blue">
-            <img class="logo-card" src="{% static './img/Rusteze-logo.png' %}" />
+            <img class="logo-card" src="{% static '/img/Rusteze-logo.png' %}" />
             <h2 class="title">The <br> best <br> way</h2>
-            <img class="producto" src="{% static './img/image_2.png' %}">
+            <img class="producto" src="{% static '/img/image_2.png' %}">
             <div class="price">
             <h6>CLP$ 520,000</h4>
             <h4>CLP$ 479,000</h3>
@@ -78,9 +78,9 @@
         </div>
 
         <div class="card card-red">
-            <img class="logo-card" src="{% static './img/Rusteze-logo.png' %}" />
+            <img class="logo-card" src="{% static '/img/Rusteze-logo.png' %}" />
             <h2 class="title">The <br> best <br> way</h2>
-            <img class="producto" src="{% static './img/image_3.png' %}">
+            <img class="producto" src="{% static '/img/image_3.png' %}">
             <div class="price">
             <h6>CLP$ 520,000</h4>
             <h4>CLP$ 479,000</h3>
