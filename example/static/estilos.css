@@ -1,0 +1,434 @@
+*{
+    font-family: ubuntu;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVAR */
+
+.container{
+    width: 100%;
+    min-height: 55vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    justify-content: flex-start;
+
+}
+
+.menu-nav{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.ul{
+    align-items: baseline;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(63, 63, 139);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav ul li a:hover{
+    color: rgb(159, 159, 253);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: rgb(24, 43, 36);
+    font-weight: 100;
+    margin: 20px 0 8px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: rgb(55, 55, 68);
+    font-weight: 100;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.boton-index{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right,#9ea5cf, #545781);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+.img-boton{
+    width: 30px;
+    display: none;
+}
+.boton-index:hover img{
+    display: block;
+}
+.boton-index:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-1::after{
+    content: ' ';
+    width: 10px;
+    height: 48%;
+    background: linear-gradient(#c4ceff, #545781);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .main-index{
+    width: 90%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#c4ceff, #545781);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1 ;
+    transform: translateX(150px);
+}
+
+.add-boton{
+    text-align: center;
+    color: white;
+    transition: .4s;
+}
+.add-boton:hover{
+    scale: 1.1;
+}
+
+@media only screen and (max-width:700px){
+
+    .nav ul{
+        width: 100%;
+        background: linear-gradient(#c4ceff, #545781);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    .nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav ul li a{
+        color: #fff;
+    }
+    .menu-nav{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: .5s;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .main-index{
+        width: 77%;
+    }
+    .color-box{
+        transform: translateX(60px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 35px;
+    }
+
+}
+
+/* footer */
+
+.pie-pagina{
+    width: 100%;
+    background: linear-gradient(to right,#303557, #a6a9da);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #32355a;
+    text-align: center;
+    transition: all .4s ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(184, 88, 248);
+    scale: 1.05;
+}
+.pie-pagina .grupo-2{
+    background: linear-gradient(to right,#21253f, #7e80b6);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:700px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+/* CARDS */
+
+main {
+    min-height: 98vh;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+.container2 {
+    display: flex;
+    background: linear-gradient(to right,#21253f, #7e80b6);
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 24px;
+}
+
+.container2 .card{
+    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 16px;
+    overflow: hidden;
+    transform: translate(0);
+    margin: 16px;
+    transition: 0.25s;
+}
+.card:hover {
+transform: scale(1.03);
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: -62px;
+    left: -64px;
+    width: 150%;
+    height: 88%;
+    z-index: -1;
+    transform: rotate(-12deg);
+}
+
+.card.card-yellow::before {
+    background: linear-gradient(170deg,  #7a9bc7, #4d5674);
+  }
+.card.card-blue::before {
+    background: linear-gradient(170deg, #d9042b, #f13a5c);
+  }
+.card.card-red::before {
+    background: linear-gradient(170deg, #d6c280, #c7af2b);
+}
+.card .logo-card {
+    height: 84px;
+    padding-left: px;
+    display: flex;
+    align-content: center;
+  }
+  .card h2 {
+    font-family: ubuntu;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .card .producto {
+    height: 180px;
+    width: 300px;
+    object-fit: contain;
+    margin-top: -32px;
+    padding-left: 15%;
+    transform: rotate(-12deg);
+  }
+  .card .price {
+    text-align: right;
+    margin-top: -24px;
+    padding-top: 18px;
+  }
+  .card .price :is(h6, h4) {
+    font-family: ubuntu;
+    color: #ffffff;
+    margin: 0;
+  }
+  .card .price h6 {
+    color: #a3a3a3;
+    font-size: 12px;
+    text-decoration: line-through;
+  }
+  .card .price h4 {
+    font-size: 24px;
+    margin-top: -4px;
+  }
+  .card.card-yellow .price h4 {
+    background: linear-gradient(170deg,  #7a9bc7, #4d5674);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card.card-blue .price h4 {
+    background: linear-gradient(170deg, #d9042b, #f13a5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card.card-red .price h4 {
+    background: linear-gradient(170deg, #d6c280, #e4d72b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+  .card .button-right {
+    text-align: right;
+    margin-top: 4px;
+  }
+  .card button {
+    font-family: ubuntu;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    position: relative;
+  }
+  .card.card-yellow button {
+    background: linear-gradient(170deg, #7a9bc7, #4d5674);
+  }
+  .card.card-blue button {
+    background: linear-gradient(170deg, #d9042b, #f13a5c);
+  }
+  .card.card-red button {
+    background: linear-gradient(170deg, #d6c280, #e4d72b);
+  }
+  @media (max-width: 1200px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+/* epacio */
+
+.espacio{
+
+    color: #ffff;
+}
